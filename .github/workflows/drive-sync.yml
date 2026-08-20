@@ -1,0 +1,73 @@
+name: Drive → site (scheduled)
+
+# Auto-reflects Google Drive edits on the site: pulls the course Drive folder,
+# normalizes it, rebuilds the Quarto site, and deploys to Pages — on a timer.
+#
+# The pulled corpus is EPHEMERAL in the runner (never committed), and build_site
+# excludes third-party papers, so no copyrighted content lands in the public repo.
+#
+# To activate (one-time):
+#   1. Create a Google service account; share the course Drive folder with its email (Viewer).
+#   2. Repo → Settings → Secrets and variables → Actions:
+#        - Secret  GDRIVE_SA_KEY        = the service account JSON key (whole file)
+#        - Variable DRIVE_SYNC_ENABLED  = true
+#   Until DRIVE_SYNC_ENABLED is 'true', scheduled runs are a no-op (job skipped).
+
+on:
+  schedule:
+    - cron: "0 8 * * *"     # daily 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  sync-build:
+    if: ${{ vars.DRIVE_SYNC_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps (pandoc + extractors + Google Drive API)
+        run: |
+          sudo apt-get update && sudo apt-get install -y pandoc
+          pip install python-pptx pypdf tiktoken google-api-python-client google-auth
+
+      - name: Service-account credentials
+        run: |
+          printf '%s' '${{ secrets.GDRIVE_SA_KEY }}' > "$RUNNER_TEMP/sa.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/sa.json" >> "$GITHUB_ENV"
+
+      - name: Pull Drive → materials/ → content/  (ephemeral)
+        run: |
+          python -m pipeline.gdrive_sync
+          python -m pipeline.sync
+
+      - name: Build site (course-original only)
+        run: python -m pipeline.build_site --all
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render
+        run: quarto render site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_site
+
+  deploy:
+    needs: sync-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
