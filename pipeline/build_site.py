@@ -236,7 +236,7 @@ def build(publish_all: bool):
 
 website:
   title: "ME/CE/AM 295"
-  favicon: assets/favicon.svg
+  favicon: assets/favicon-dango.svg
   navbar:
     background: primary
     left:
