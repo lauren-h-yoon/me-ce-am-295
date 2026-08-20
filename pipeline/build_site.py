@@ -227,6 +227,7 @@ def build(publish_all: bool):
 
 website:
   title: "ME/CE/AM 295"
+  favicon: assets/favicon.svg
   navbar:
     background: primary
     left:
@@ -249,7 +250,6 @@ website:
 format:
   html:
     theme: [cosmo, assets/styles.scss]
-    favicon: assets/favicon.svg
     toc: true
     page-layout: full
 """
