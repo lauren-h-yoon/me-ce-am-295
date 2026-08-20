@@ -1,0 +1,53 @@
+# ME/CE/AM 295 AI TA — Slack app manifest
+# Workspace: me-ce-am-295.slack.com
+# Create: api.slack.com/apps -> Create New App -> From a manifest ->
+#         pick the "me-ce-am-295" workspace -> paste this YAML.
+# Then: Install to Workspace (-> SLACK_BOT_TOKEN xoxb-...),
+#       Basic Information -> App-Level Tokens -> generate with connections:write
+#       (-> SLACK_APP_TOKEN xapp-...) for Socket Mode.
+display_information:
+  name: Weekly
+  description: "Weekly expert AI TA for ME/CE/AM 295 — a per-week specialist, one per week channel."
+  background_color: "#1E2761"
+features:
+  bot_user:
+    display_name: weekly
+    always_online: true
+  # Agents & AI Apps surface: gives the app a dedicated assistant pane with
+  # suggested prompts + status. Requires the Slack Developer Program / a paid or
+  # sandbox workspace.
+  assistant_view:
+    assistant_description: "Your week-scoped AI TA for ME/CE/AM 295. Open me from a #week-NN channel and I'll focus on that week's materials."
+  app_home:
+    home_tab_enabled: false
+    messages_tab_enabled: true       # required for the assistant pane
+    messages_tab_read_only_enabled: false
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read     # respond to @ai-ta
+      - assistant:write       # Agents & AI Apps: status, suggested prompts, title
+      - bookmarks:write       # link each #week-NN channel to its Google Drive folder
+      - channels:history      # read week-channel threads for context
+      - channels:read         # resolve channel names -> week number
+      - channels:manage       # provision_channels.py creates #week-NN + invites
+      - chat:write            # post answers
+      - im:history            # student DMs / assistant thread
+      - im:read
+      - im:write
+      - reactions:read        # ⭐ / 🚩 feedback loop
+      - reactions:write
+      - users:read            # display names for logging (no emails)
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+      - assistant_thread_started          # assistant pane opened
+      - assistant_thread_context_changed  # user switched the channel context
+      - message.im
+      - reaction_added
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

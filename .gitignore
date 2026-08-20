@@ -1,0 +1,49 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Generated / local runtime
+pipeline/__pycache__/
+*.log
+ingestion_state.json
+
+# Quarto build + generated site pages (rebuilt by pipeline/build_site.py + CI).
+# site/assets/ is source and IS committed; everything else under site/ is derived.
+site/_site/
+site/.quarto/
+site/materials/
+site/weeks/
+site/_quarto.yml
+site/index.qmd
+site/schedule.qmd
+site/syllabus.qmd
+site/study-guides.qmd
+site/references.qmd
+site/ai-ta.qmd
+
+# Normalized media can be large; keep markdown, ignore extracted binaries by default
+# (comment out the next line if you want media committed for the site)
+# content/**/media/
+
+# Slack CLI local state
+.slack/
+
+content/.gdrive_state.json
+
+# Public repo exclusions (raw binaries, third-party papers, quizzes, scripts)
+materials/
+content/references/
+content/_assessments/
+content/**/*presentation-script*.md
+content/.gdrive_state.json

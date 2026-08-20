@@ -1,0 +1,22 @@
+# Local Postgres + pgvector for the ME/CE/AM 295 knowledge base.
+#   docker compose up -d
+#   export DATABASE_URL=postgresql://postgres:postgres@localhost:5432/me_ce_am_295
+#   python -m pipeline.index init && python -m pipeline.index reindex
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: me_ce_am_295
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  pgdata:

@@ -1,0 +1,27 @@
+# ===== Core (content pipeline + bot) =====
+
+# Content sync / normalization
+python-pptx>=0.6.23      # .pptx text extraction
+pypdf>=4.0               # .pdf text extraction
+# pandoc is a system binary (brew install pandoc) used for .docx -> Markdown
+
+# AI backend: Claude Agent SDK (spawns the Claude Code CLI).
+# Install the CLI separately:  npm install -g @anthropic-ai/claude-code
+# Auth via CLAUDE_CODE_OAUTH_TOKEN (subscription) OR ANTHROPIC_API_KEY (pay-per-use).
+claude-agent-sdk>=0.1
+
+# Slack bot
+slack-bolt>=1.21         # Assistant (Agents & AI Apps) support
+slack-sdk>=3.31
+slack-cli-hooks>=0.7     # lets the Slack CLI run/deploy this Bolt app (`slack run`)
+
+# Utilities
+python-dotenv>=1.0
+
+# ===== Optional: semantic-search upgrade =====
+# The bot uses native Grep/Read retrieval by default (no embeddings needed).
+# Install these only if you enable the pgvector pipeline (pipeline/index.py, query.py):
+#   voyageai>=0.3
+#   psycopg[binary]>=3.1
+#   pgvector>=0.3
+#   tiktoken>=0.7

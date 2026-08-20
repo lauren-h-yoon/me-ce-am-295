@@ -1,0 +1,983 @@
+{
+  "generated_at": "2026-08-19T11:55:21Z",
+  "current_week": 1,
+  "counts": {
+    "normalized": 111,
+    "instructor_only": 10,
+    "added": 111,
+    "updated": 0,
+    "skipped_unchanged": 0,
+    "skipped_excluded": 50,
+    "purged": 0
+  },
+  "files": {
+    "materials/ME_CE_295_Syllabus_Fall2026_v2_CD.docx": {
+      "hash": "679d6ce80dcc627e05d4591805285ffc7f037d1b2208959c43a61afc9224197c",
+      "week": 0,
+      "doc_type": "syllabus",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/syllabus/me-ce-295-syllabus-fall2026-v2-cd.md"
+    },
+    "materials/References/PINN vs PINO Comparison.docx": {
+      "hash": "64f005555b33597bb3603c30381df461b7ac34f376d448cdde5c366e365cc934",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/pinn-vs-pino-comparison.md"
+    },
+    "materials/References/Reading_List_Audit_July2026.docx": {
+      "hash": "0eb0d973af1b4a1d648b0afa1d9c89c2b21ad8a03ec2f17a394590feaa1df6cc",
+      "week": 0,
+      "doc_type": "reading",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/reading-list-audit-july2026.md"
+    },
+    "materials/References/Ref_01_Gridach_2025_Agentic_AI_Survey.pdf": {
+      "hash": "73e822837f2073afb91f25580e7ad67577053e47befb62e6a226854b9e620628",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-01-gridach-2025-agentic-ai-survey.md"
+    },
+    "materials/References/Ref_02_Lu_2026_End_to_End_AI_Research.md": {
+      "hash": "4417906b6de46bf0c27334502d53e9e34d9b97685a95dcf73005a4334dd60df0",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-02-lu-2026-end-to-end-ai-research.md"
+    },
+    "materials/References/Ref_03_OpenAI_2024_Prompt_Engineering.md": {
+      "hash": "3d2e4f12f130ef0719c7d25d1eb4a5c1cb1ca0f1b7a1ba7527e6c414198b055e",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-03-openai-2024-prompt-engineering.md"
+    },
+    "materials/References/Ref_04_Springer_2025_Building_GenAI_Agents.pdf": {
+      "hash": "52225ac883bb4c4388601f4cf2ff039535ca5b4a04ef6e6bc95eb0475f9fa505",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-04-springer-2025-building-genai-agents.md"
+    },
+    "materials/References/Ref_05_Elrefaie_2025_AI_Agents_Engineering.pdf": {
+      "hash": "3653d7fe39eec68cc2aaf1bed81c2db753651272e9f72804ad35dee37e8b7483",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-05-elrefaie-2025-ai-agents-engineering.md"
+    },
+    "materials/References/Ref_06_Brown_2025_RAG_Review.pdf": {
+      "hash": "6c97c007a9e699231c9ca7ca31e0e1bf55066b9c95f665bd9f5cc93cae07d384",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-06-brown-2025-rag-review.md"
+    },
+    "materials/References/Ref_07_Raissi_2019_PINNs.pdf": {
+      "hash": "2a8db6776a110a4f36bd1e36af79cf31a2e74baa5af8f7ee3d9286a75fdc400d",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-07-raissi-2019-pinns.md"
+    },
+    "materials/References/Ref_08_Li_2020_Fourier_Neural_Operator.pdf": {
+      "hash": "6cd2645d4a50d1a61a261529b33747c674d78851bdbe6993b0961f81a17dc6f2",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-08-li-2020-fourier-neural-operator.md"
+    },
+    "materials/References/Ref_09_ACM_2024_LLM_Code_Generation.pdf": {
+      "hash": "9abdaf040e4e77a948a7cb9ad90932b978244ebdfde78c9023fe98b572a02967",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-09-acm-2024-llm-code-generation.md"
+    },
+    "materials/References/Ref_10_Merchant_2023_Materials_Discovery.md": {
+      "hash": "59e10c72653cc6f9820f05099996425aa62c5acd37d73fe9165d10939d71cba7",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-10-merchant-2023-materials-discovery.md"
+    },
+    "materials/References/Ref_11_Tobias_2025_Self_Driving_Labs.md": {
+      "hash": "055753f8d2d028af532c82e976a32b2f2927f9523b4464cff8484ace16949cc1",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-11-tobias-2025-self-driving-labs.md"
+    },
+    "materials/References/Ref_13_AEC_2025_AI_Agents_Civil.pdf": {
+      "hash": "7272f69877201b9fdb37a9ff90b42a673f6a7140700be8889bf2ae756a38370f",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-13-aec-2025-ai-agents-civil.md"
+    },
+    "materials/References/Ref_14_Gao_2024_Biomedical_AI_Agents.md": {
+      "hash": "99838100614ec2c6f09106740e151e31b34d3ab528b937adb91d39aa37788719",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-14-gao-2024-biomedical-ai-agents.md"
+    },
+    "materials/References/Ref_15_Zheng_2025_LLM_Scientific_Discovery.pdf": {
+      "hash": "b71a05a2c6a56e90aedc052c8890bb2ad943a3da20816401cb9814b2c212c9a9",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-15-zheng-2025-llm-scientific-discovery.md"
+    },
+    "materials/References/Ref_16_CognizantAI_2026_Multi_Agent_Production.docx": {
+      "hash": "cec3ff3b151b9478deedd1526110a7bd17562dccb840b69e098c25ab162ace89",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-16-cognizantai-2026-multi-agent-production.md"
+    },
+    "materials/References/Ref_17_CognizantAI_2026_Vibe_Coding_Neuro_San.docx": {
+      "hash": "081ea96f57c0aeab2986d2e2ccddf8c8f6c0ea35d2e48cfbd41a485c948e35be",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-17-cognizantai-2026-vibe-coding-neuro-san.md"
+    },
+    "materials/References/Ref_18_Neuro_San_Framework_2026.docx": {
+      "hash": "b953b464fbfc522fbb4aa9d2d6ec1d73f572a9a2cdd39961734b1f8b9d6a6631",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-18-neuro-san-framework-2026.md"
+    },
+    "materials/References/Ref_19_Anthropic_MCP_Specification.md": {
+      "hash": "e835298149eda4ec97c8c438921e35871833f57bb5cd723058f4b2dc0ea16263",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-19-anthropic-mcp-specification.md"
+    },
+    "materials/References/Ref_20_Anthropic_2024_Building_Effective_Agents.md": {
+      "hash": "28e8ee5c3305e76a7479c741cbd524212683621e7d8c6cb97a2abd34c40e9d20",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-20-anthropic-2024-building-effective-agents.md"
+    },
+    "materials/References/Ref_21_Gottweis_2025_AI_CoScientist.md": {
+      "hash": "8d03bdc7b66be3811e975b8b28b0579b22e90fbf0265f242d521ea48886f8078",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-21-gottweis-2025-ai-coscientist.md"
+    },
+    "materials/References/Ref_22_Cheetham_2024_GNoME_Critique.md": {
+      "hash": "6d24ae2c279539801f2b054b466edf2cdaf46bf265450fdf8fb1bd6d4e56faaa",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-22-cheetham-2024-gnome-critique.md"
+    },
+    "materials/References/Ref_23_Leeman_2024_PRX_Energy_ALab_Critique.md": {
+      "hash": "bc28338c1595e252286c28e6785fd666e40e1cd74ea40c33529bc267abd3af71",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-23-leeman-2024-prx-energy-alab-critique.md"
+    },
+    "materials/References/Ref_24_McGreivy_2024_Weak_Baselines_ML_PDEs.md": {
+      "hash": "fa10832981cb4876701b8bd26fdfd6773e33d27503869cb601ad75e0e0bf4cea",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-24-mcgreivy-2024-weak-baselines-ml-pdes.md"
+    },
+    "materials/References/Ref_25_Cemri_2025_MAST_MultiAgent_Failures.md": {
+      "hash": "15cbba56e37afdfd36533b3e94cd202c622cefd97c3c4f01422669a15d7c308a",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-25-cemri-2025-mast-multiagent-failures.md"
+    },
+    "materials/References/Ref_26_Skarlinski_2024_PaperQA2.md": {
+      "hash": "bdfa219a25012a8a930636d827b14439b86500fdb063f6a653f70f867b196b72",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-26-skarlinski-2024-paperqa2.md"
+    },
+    "materials/References/Ref_27_Zeni_2025_MatterGen.md": {
+      "hash": "b75b5e87043ea17b893c87a438c6bb39a36b6308ea695854f82ee03c8181c912",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-27-zeni-2025-mattergen.md"
+    },
+    "materials/References/Ref_28_Tian_2024_SciCode_Benchmark.md": {
+      "hash": "c9982645c3d4021545311bfd9199fb40f5ed51989066ee24c944c1af08a4669d",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-28-tian-2024-scicode-benchmark.md"
+    },
+    "materials/References/Ref_29_Sakana_2025_AI_Scientist_v2.md": {
+      "hash": "e4a992d81fdacd2c042ee3ce18d507ccd7a09e4d4334fb58f8cdd778a64ba8f4",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-29-sakana-2025-ai-scientist-v2.md"
+    },
+    "materials/References/Ref_30_Chan_2024_LLaMP_Materials_Agent.md": {
+      "hash": "7f9809829cf06ecd0bbfe2492247e5869e2a4c76f1d5accddd1e1aff950ed24b",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-30-chan-2024-llamp-materials-agent.md"
+    },
+    "materials/References/Ref_31_Bran_2024_ChemCrow.md": {
+      "hash": "f74e7d064b2f89b970ddedcbd4ebdc8ffc662ce7e3616f33eed4a4ddf3303d54",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-31-bran-2024-chemcrow.md"
+    },
+    "materials/References/Ref_32_Yue_2025_Foam_Agent_OpenFOAM.md": {
+      "hash": "f348f5901cac6f438202657c0c2d3d42b04e5de101c3f0d8f02f5f5ac506a708",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-32-yue-2025-foam-agent-openfoam.md"
+    },
+    "materials/References/Ref_33_Yao_2024_tau_bench.md": {
+      "hash": "4a5e74768334b6ccaafe5365ee5a84acdc032e7cb52f906afb1689ac36dcd2d0",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-33-yao-2024-tau-bench.md"
+    },
+    "materials/References/Ref_34_USCO_2025_Copyright_and_AI_Part2_Copyrightability.md": {
+      "hash": "99a5cab94bacdbcf651460bd7c0158063d87cb67a51f48d36bfda4f7c46e50f0",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-34-usco-2025-copyright-and-ai-part2-copyrightability.md"
+    },
+    "materials/References/Ref_35_Thaler_v_Perlmutter_2025_DC_Circuit.md": {
+      "hash": "8cff9da5f964b573bb5b483973edbc26d3f709440ef116d760a338f724fcfa91",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-35-thaler-v-perlmutter-2025-dc-circuit.md"
+    },
+    "materials/References/Ref_36_Wang_2023_Experts_Guide_Training_PINNs.md": {
+      "hash": "9be35f70142e1a60f41693bd1c74ccd8d4247e65b22ba35ad3f15e7be877183d",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-36-wang-2023-experts-guide-training-pinns.md"
+    },
+    "materials/References/Ref_37_Tom_2024_SDL_Chem_Rev.md": {
+      "hash": "8f941f2bdd9f73553740c33d0abf94abf158b25e55dd057e470082c8dca06f90",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-37-tom-2024-sdl-chem-rev.md"
+    },
+    "materials/References/Ref_38_Wei_2025_Agentic_Science_Survey.md": {
+      "hash": "bdc3b40b5cd213725d0651ad9acf221ad3fde585cc6c8bbb4057888d5e98c230",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-38-wei-2025-agentic-science-survey.md"
+    },
+    "materials/References/Ref_39_2026_Agentic_AI_Scientists_Critique.md": {
+      "hash": "70af9d3aadde97562f6d149b3336ab7d44dadfc131bc8ba506eced44bde1aeef",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-39-2026-agentic-ai-scientists-critique.md"
+    },
+    "materials/References/Ref_40_2026_AI_Agents_Narrow_Exploration.md": {
+      "hash": "60c3cb193458ff74b53fa97b8524711f593d4037eec23f7925e537cbe24fe34d",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-40-2026-ai-agents-narrow-exploration.md"
+    },
+    "materials/References/Ref_41_Vaswani_2017_Attention_Is_All_You_Need.md": {
+      "hash": "ea22efffd64859c80efb9c2dccca676dbd2b751559df642a301c1dd4dfe3b57e",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-41-vaswani-2017-attention-is-all-you-need.md"
+    },
+    "materials/References/Ref_42_Yao_2022_ReAct.md": {
+      "hash": "82a9ebaab4b6e0e023efafb46524624f77bd8a1defc53a8b121cf810127079b7",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-42-yao-2022-react.md"
+    },
+    "materials/References/Ref_43_Wei_2022_Chain_of_Thought.md": {
+      "hash": "c08d99de85e981ea7a770fbb9e14405a5aea2d581ed3e619b8bacffb6c8c2dc4",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-43-wei-2022-chain-of-thought.md"
+    },
+    "materials/References/Ref_44_Wang_2022_Self_Consistency.md": {
+      "hash": "ca7510526b7afc04d7f01ef414497db3191bbb5e39fa568b98343b425e1c6724",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-44-wang-2022-self-consistency.md"
+    },
+    "materials/References/Ref_45_Yao_2023_Tree_of_Thoughts.md": {
+      "hash": "2d329afc8ae516a2b141048c1bd06208a7e7906c82e56d326ff6f5b0fa587c98",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-45-yao-2023-tree-of-thoughts.md"
+    },
+    "materials/References/Ref_46_Shinn_2023_Reflexion.md": {
+      "hash": "d5a78fb8fa3ca26076fac3b17542eae01c6aa636d383fd8f819edd5da0aadbac",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-46-shinn-2023-reflexion.md"
+    },
+    "materials/References/Ref_47_Liu_2023_Lost_in_the_Middle.md": {
+      "hash": "32a04c77fad5a0e693cbc9ef38351d43fb6aa2589983aca483a375b0e91c7a19",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-47-liu-2023-lost-in-the-middle.md"
+    },
+    "materials/References/Ref_48_Lu_2021_DeepONet.md": {
+      "hash": "25244f8d47332e99beea8f324d66e38b88cfd54e21260c9538832020cb5e38dc",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-48-lu-2021-deeponet.md"
+    },
+    "materials/References/Ref_49_Karniadakis_2021_Physics_Informed_ML.md": {
+      "hash": "638a48e4f87b7d478f1637043656ae806ca227fc0b45731601e58dca3284d4b3",
+      "week": 0,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/references/ref-49-karniadakis-2021-physics-informed-ml.md"
+    },
+    "materials/Study Guides/Study_Guide_1_Python_API_Fundamentals.docx": {
+      "hash": "11f3efa138cba4d1d91bcc7ff2d26ce98a2a511e4edc6b8eef2c3f265dc40576",
+      "week": 0,
+      "doc_type": "study_guide",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/study-guides/study-guide-1-python-api-fundamentals.md"
+    },
+    "materials/Study Guides/Study_Guide_2_RAG_Handbook.docx": {
+      "hash": "ad0740c9aaae53ddaa573dde0014da233d96b615125ca833130141ef38b33bb9",
+      "week": 0,
+      "doc_type": "study_guide",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/study-guides/study-guide-2-rag-handbook.md"
+    },
+    "materials/Study Guides/Study_Guide_3_SciML_Cheat_Sheet.docx": {
+      "hash": "ae89a69f513cdef9238165a7052e381a1bce9d81a60faaa2d5d5e2989c756679",
+      "week": 0,
+      "doc_type": "study_guide",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/study-guides/study-guide-3-sciml-cheat-sheet.md"
+    },
+    "materials/Study Guides/Study_Guide_4_Agent_Architecture.docx": {
+      "hash": "28b0107792702cd3c5ad5f6f52df0a8ecc06e76ee056088c2227e39edb9f9b95",
+      "week": 0,
+      "doc_type": "study_guide",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/study-guides/study-guide-4-agent-architecture.md"
+    },
+    "materials/Study Guides/Study_Guide_5_Production_Multi_Agent_Systems.docx": {
+      "hash": "63f16790daed0963b6fea0081ca00af7137651bcbfcb3999876ffc70484833d0",
+      "week": 0,
+      "doc_type": "study_guide",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/study-guides/study-guide-5-production-multi-agent-systems.md"
+    },
+    "materials/Week 1/ME_CE_295_Week_1_Slides.pdf": {
+      "hash": "096f56ba5fc594c7af2b74f01e737db853cd5b015ebbaa0db232896f71a00e28",
+      "week": 1,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-01/me-ce-295-week-1-slides.md"
+    },
+    "materials/Week 1/Week1_Lecture_Outline.docx": {
+      "hash": "a2c08c44166b9a836f9a297eb80259f2b3f27edd0783a4ba7166625d9b5b7186",
+      "week": 1,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-01/week1-lecture-outline.md"
+    },
+    "materials/Week 1/Week1_Presentation_Script.docx": {
+      "hash": "6afeefc5f0b5ee4ae369a93b349fb5ab42cef6a00ea79d9b888a347f608f07e6",
+      "week": 1,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-01/week1-presentation-script.md"
+    },
+    "materials/Week 1/Week1_Quiz.docx": {
+      "hash": "b021b8084e1385c79eacd8dccbcd218e3d5d7e41ddec35f15d56c25fd6bd6794",
+      "week": 1,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-01/week1-quiz.md"
+    },
+    "materials/Week 1/Week1_Quiz_KEY.docx": {
+      "hash": "203999e3b30aab2daf34bf53d54561f2e8379e07354026a6d1c3f7c5079be8a4",
+      "week": 1,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 1/Week1_Reading_UPDATED_Slide.pptx": {
+      "hash": "f3a254a41394adf1c55fe8a653ac6867f0d70312fa4adf70c372cd3ee7c5c7eb",
+      "week": 1,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-01/week1-reading-updated-slide.md"
+    },
+    "materials/Week 1/Week1_The_Dawn_of_Agentic_AI.docx": {
+      "hash": "c9c314d960fc809f25aa22b8f5e291f4bff89736f6ea826bb5b7971b8f6ca0a6",
+      "week": 1,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-01/week1-the-dawn-of-agentic-ai.md"
+    },
+    "materials/Week 10/ME_CE_295_Week_10_Presentation_Script.md": {
+      "hash": "773537dc383d577965f7b9686e5ac90ce5220c31902af85e361bd01fef0e7308",
+      "week": 10,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-10/me-ce-295-week-10-presentation-script.md"
+    },
+    "materials/Week 10/ME_CE_295_Week_10_Slides.pptx": {
+      "hash": "8a3ea8d1c23e6d3df3795fd5c02084e188b89881ddcb31b8e5750f80cf2f3050",
+      "week": 10,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-10/me-ce-295-week-10-slides.md"
+    },
+    "materials/Week 10/Week10_Ethics_Future.docx": {
+      "hash": "4738c5cda19262bd874381b58916fc5a8d6210ea121769e213d8d3e79edb933e",
+      "week": 10,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-10/week10-ethics-future.md"
+    },
+    "materials/Week 10/Week10_Lecture_Outline.docx": {
+      "hash": "0f12ba4262ddd22bc1716275424bdae7480063443d56b37d199b98b9313946e0",
+      "week": 10,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-10/week10-lecture-outline.md"
+    },
+    "materials/Week 10/Week10_Quiz.docx": {
+      "hash": "06c41bb8eb8b82fd5bc1b6e883f14dd24b9a485266b703e05aa9de3c64f8486b",
+      "week": 10,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-10/week10-quiz.md"
+    },
+    "materials/Week 10/Week10_Quiz_KEY.docx": {
+      "hash": "85cc763de70f17c7c5c498ddb23aa322e17ef15d58829c65f24643c63f2d203e",
+      "week": 10,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 2/ME_CE_295_Week_2_Presentation_Script.md": {
+      "hash": "fa4f6bd54dbe4fd2183b29c82f4cdab84795051d5fdddfa8e498afd65a415005",
+      "week": 2,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-02/me-ce-295-week-2-presentation-script.md"
+    },
+    "materials/Week 2/ME_CE_295_Week_2_Slides.pdf": {
+      "hash": "b3b0111ced970455ff24ae9a1a7325d1f45db96503a07af6b22da1bf32e7bcde",
+      "week": 2,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-02/me-ce-295-week-2-slides.md"
+    },
+    "materials/Week 2/Week2_Foundations_of_LLMs.docx": {
+      "hash": "8f8a960d3c5237960ea1a5a85ebd4d2480c6403e51c82c2e5dc2f1bde5f4a6d8",
+      "week": 2,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-02/week2-foundations-of-llms.md"
+    },
+    "materials/Week 2/Week2_HW1_Briefing_CORRECTED_Slide.pptx": {
+      "hash": "ddf07c5cbf2674ca3018f0714b78802cd5818286501fcf2a75a694c4b275ac98",
+      "week": 2,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-02/week2-hw1-briefing-corrected-slide.md"
+    },
+    "materials/Week 2/Week2_Lecture_Outline.docx": {
+      "hash": "85a305ee849b82797673f32376119368724d5aa6a836365a43c56baa98f0a75b",
+      "week": 2,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-02/week2-lecture-outline.md"
+    },
+    "materials/Week 2/Week2_Quiz.docx": {
+      "hash": "42898dcddc008f64e963a43517c2b26f4835163d74a07a972a789b476597281b",
+      "week": 2,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-02/week2-quiz.md"
+    },
+    "materials/Week 2/Week2_Quiz_KEY.docx": {
+      "hash": "eb64f0bfd7791d1661a4f532acea5d342e8f9c098c88f1156c46c1f8e4dcc1e3",
+      "week": 2,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 3/ME_CE_295_Week_3_Slides.pdf": {
+      "hash": "74614a49523efb29e66b6c04c4e01771a154026b4ab2336d003881605f0404a8",
+      "week": 3,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-03/me-ce-295-week-3-slides.md"
+    },
+    "materials/Week 3/Week3_Agentic_Frameworks.docx": {
+      "hash": "fdaaa96a45e28b8ee753637b3c6963bfa2594b01e268ba306f1f9ae7900c9aa9",
+      "week": 3,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-03/week3-agentic-frameworks.md"
+    },
+    "materials/Week 3/Week3_Lecture_Outline.docx": {
+      "hash": "10ca5c28dc03937ef60ca68e7c586fc459d24c116fe29e7571752d1bed1fec86",
+      "week": 3,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-03/week3-lecture-outline.md"
+    },
+    "materials/Week 3/Week3_Presentation_Script.docx": {
+      "hash": "04e0fa57b2afd1c441c791b81021d9ac30ad7f89de75ba61aae687a51d83a724",
+      "week": 3,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-03/week3-presentation-script.md"
+    },
+    "materials/Week 3/Week3_Quiz.docx": {
+      "hash": "6423862b7d9640ea645d7bbaa6e28d94839daa17a8e8a54ce877d9bc3031658f",
+      "week": 3,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-03/week3-quiz.md"
+    },
+    "materials/Week 3/Week3_Quiz_KEY.docx": {
+      "hash": "bfcae26266e16332db776e666da3bd1135a6bbc7f99bc6cdc8776985b4457db5",
+      "week": 3,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 4/ME_CE_295_Week_4_Slides.pdf": {
+      "hash": "dfa57b513cc123e7ae1892d73eea0f5204980bb4c28be4a9d08194f5837026d8",
+      "week": 4,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-04/me-ce-295-week-4-slides.md"
+    },
+    "materials/Week 4/Week4_Lecture_Outline.docx": {
+      "hash": "5acbf2bf55e4f78cc6ed119bad36bd9eb4489b1c6dfc9f17ca18d309061f7f86",
+      "week": 4,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-04/week4-lecture-outline.md"
+    },
+    "materials/Week 4/Week4_Presentation_Script.md": {
+      "hash": "eeba5a318fb693fa516c1bdb9865913ca4444e9ea41dd23eef3fb40c2042df4f",
+      "week": 4,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-04/week4-presentation-script.md"
+    },
+    "materials/Week 4/Week4_Quiz.docx": {
+      "hash": "fc91b495b9db441e114f43de592b83dccbcb7cd3b07288596a9ae939cb060767",
+      "week": 4,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-04/week4-quiz.md"
+    },
+    "materials/Week 4/Week4_Quiz_KEY.docx": {
+      "hash": "87a7893eb983f158d746eee2239d7826e370f02371a74a782c75038791212619",
+      "week": 4,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 4/Week4_RAG_Literature_Review.docx": {
+      "hash": "8936f5c0ee330a11b879a0edc1a602c48649937af2ec5c4d78f59afaeaa94bad",
+      "week": 4,
+      "doc_type": "reference",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-04/week4-rag-literature-review.md"
+    },
+    "materials/Week 5/ME_CE_295_Week_5_Presentation_Script.md": {
+      "hash": "4b7e0f44aacb266d0768ffc89ef1e9109052767c030903fba66d640a62d4338e",
+      "week": 5,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-05/me-ce-295-week-5-presentation-script.md"
+    },
+    "materials/Week 5/ME_CE_295_Week_5_Slides.pdf": {
+      "hash": "ac514821d852a462c12e7cf2dfea69cc4b093c20c52cffc3c58fe7fa639cf537",
+      "week": 5,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-05/me-ce-295-week-5-slides.md"
+    },
+    "materials/Week 5/Week5_Lecture_Outline.docx": {
+      "hash": "0974b33ab3ec52307f2c3a22bedbe1b82d68cf1418ba629b47cd53fc29f0a175",
+      "week": 5,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-05/week5-lecture-outline.md"
+    },
+    "materials/Week 5/Week5_Quiz.docx": {
+      "hash": "7029599f5bbe39419609f82301af48672f5ce0160e6298f29a98c55b72897c73",
+      "week": 5,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-05/week5-quiz.md"
+    },
+    "materials/Week 5/Week5_Quiz_KEY.docx": {
+      "hash": "0c0a0ae41e65618916a1049f5757f76b1082638e17488e94f09d82ea6867f09f",
+      "week": 5,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 5/Week5_SciML_PINNs.docx": {
+      "hash": "7ad766f9a62ac0af832d6562ea542e49eabe52d2fcf43fe58c5b1104206d5443",
+      "week": 5,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-05/week5-sciml-pinns.md"
+    },
+    "materials/Week 6/ME_CE_295_Week_6_Presentation_Script.md": {
+      "hash": "9981e26174c462b6e1ed2418bfe5ed74cbaa3ed51d3cf9c4bae502887020af5a",
+      "week": 6,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-06/me-ce-295-week-6-presentation-script.md"
+    },
+    "materials/Week 6/ME_CE_295_Week_6_Slides.pdf": {
+      "hash": "618896d63321d17d6ed499506eb80fa6991ef29ee1b13f34f4695b5b9b19f21d",
+      "week": 6,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-06/me-ce-295-week-6-slides.md"
+    },
+    "materials/Week 6/Week6_GNN_REPLACEMENT_Slide.pptx": {
+      "hash": "3537b74886ed5bd6a65e936feabadcd3496666bfb3e08b2d62f824dd7b757acb",
+      "week": 6,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-06/week6-gnn-replacement-slide.md"
+    },
+    "materials/Week 6/Week6_Lecture_Outline.docx": {
+      "hash": "849226ad353dd633c1c0358e4b4278c9abba4438ce816b2b3e3629aca8b0bcef",
+      "week": 6,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-06/week6-lecture-outline.md"
+    },
+    "materials/Week 6/Week6_Neural_Operators.docx": {
+      "hash": "2ef9f9f421ec863343afad7bb42b24bcb414e68837a8bfa5b94ebe0e7294f1c2",
+      "week": 6,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-06/week6-neural-operators.md"
+    },
+    "materials/Week 6/Week6_Quiz.docx": {
+      "hash": "b20f757b723d85d96c1bea8ee6164a289f5fe79cb904283978a4dbb84642931d",
+      "week": 6,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-06/week6-quiz.md"
+    },
+    "materials/Week 6/Week6_Quiz_KEY.docx": {
+      "hash": "724b9de846300e134a1506e15b2976c64edcbca5d12566b3f2f1210c708e2550",
+      "week": 6,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 7/ME_CE_295_Week_7_Presentation_Script.md": {
+      "hash": "9084729a9e809547028e5b2a4f726290be5aa44e3c06a2b282cfc3fbd61360e7",
+      "week": 7,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-07/me-ce-295-week-7-presentation-script.md"
+    },
+    "materials/Week 7/ME_CE_295_Week_7_Slides.pdf": {
+      "hash": "d85736ab61ef8fc5887d60106f2e90a83ced8803fd11b81c1f107c956563a0d2",
+      "week": 7,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-07/me-ce-295-week-7-slides.md"
+    },
+    "materials/Week 7/Week7_Code_Generation.docx": {
+      "hash": "143af5dda234bbe47a63cf0260cd31286fd927bb0f80049671750b3f1d2ed3ba",
+      "week": 7,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-07/week7-code-generation.md"
+    },
+    "materials/Week 7/Week7_Lecture_Outline.docx": {
+      "hash": "40ba952bae820c8ac49de5ea7fc78c19d48ceb416e3849565bc3a9ce2f6be40f",
+      "week": 7,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-07/week7-lecture-outline.md"
+    },
+    "materials/Week 7/Week7_Quiz.docx": {
+      "hash": "c2088c43ac043ca5819417350ec6c6257667b1a0fd1e59f81d2dcaa311ef48e7",
+      "week": 7,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-07/week7-quiz.md"
+    },
+    "materials/Week 7/Week7_Quiz_KEY.docx": {
+      "hash": "1c6646be4b5f8929a1fc42d8abd31fbb0425c14e67626977f7e554deb5b21455",
+      "week": 7,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 8/ME_CE_295_Week_8_Presentation_Script.md": {
+      "hash": "9c6f817c83670222e4f64013db4983797ad9cceab0a26113ec68a98fd5076508",
+      "week": 8,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-08/me-ce-295-week-8-presentation-script.md"
+    },
+    "materials/Week 8/ME_CE_295_Week_8_Slides.pdf": {
+      "hash": "8f77ebda4ab22ea49b8cb625b64e693c2907a76e6c789a85f0f9848fab6a5643",
+      "week": 8,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-08/me-ce-295-week-8-slides.md"
+    },
+    "materials/Week 8/Week8_Critiques_SUPPLEMENT_Slide.pptx": {
+      "hash": "d911c53a5caddf865c540fce2f205efb96845fcff02f514b7e31f8cef5e4c7e6",
+      "week": 8,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-08/week8-critiques-supplement-slide.md"
+    },
+    "materials/Week 8/Week8_GNoME_Pipelines_REPLACEMENT_Slide.pptx": {
+      "hash": "97d29a165e7c6b0fca2ff4694b137c00039588e89cf3222781425da2eee69201",
+      "week": 8,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-08/week8-gnome-pipelines-replacement-slide.md"
+    },
+    "materials/Week 8/Week8_Generative_Design_SDL.docx": {
+      "hash": "86785fb3208c1c80e054f3f4c7f87c8701a84dce792ba9e4f62b9fc7bd1888ef",
+      "week": 8,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-08/week8-generative-design-sdl.md"
+    },
+    "materials/Week 8/Week8_Lecture_Outline.docx": {
+      "hash": "1d568f796c6612de2367657d7d414485ef70689be35ac62deb32c7fff48147c2",
+      "week": 8,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-08/week8-lecture-outline.md"
+    },
+    "materials/Week 8/Week8_Quiz.docx": {
+      "hash": "14ff28c3a5aeacb843a67ee2b8f21a17a29295795463219095022e670b41e259",
+      "week": 8,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-08/week8-quiz.md"
+    },
+    "materials/Week 8/Week8_Quiz_KEY.docx": {
+      "hash": "ac60011f90e1b1645df15a496c50beb1375fc000a8f4691ea4e3d9b268b65d7a",
+      "week": 8,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    },
+    "materials/Week 9/ME_CE_295_Week_9_Presentation_Script.md": {
+      "hash": "5023ff5dad230c618b33285dfb4cb97ea024d87d13c40bc57d569f091430c87e",
+      "week": 9,
+      "doc_type": "lecture_script",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-09/me-ce-295-week-9-presentation-script.md"
+    },
+    "materials/Week 9/ME_CE_295_Week_9_Slides.pptx": {
+      "hash": "c1e0d9c955492f582491bb94d95eb2086b873d158dedd0aa88f79f6d9a4095f2",
+      "week": 9,
+      "doc_type": "lecture_slides",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-09/me-ce-295-week-9-slides.md"
+    },
+    "materials/Week 9/Week9_Evaluation_Reliability_Deployment.docx": {
+      "hash": "c52fb64ce30e6753fb1639aef71dd12f3bec7f5a305a272b8d88c4391e24028a",
+      "week": 9,
+      "doc_type": "lecture_notes",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-09/week9-evaluation-reliability-deployment.md"
+    },
+    "materials/Week 9/Week9_Lecture_Outline.docx": {
+      "hash": "ab625bc048f2ccfdea56f83f1bb8f6eb30bd14bd4066bd9c136fdbbea4de7bf1",
+      "week": 9,
+      "doc_type": "lecture_outline",
+      "access": "all_students",
+      "status": "normalized",
+      "content_path": "content/week-09/week9-lecture-outline.md"
+    },
+    "materials/Week 9/Week9_Quiz.docx": {
+      "hash": "0ebb71456be4e6fa27e9135806e3a3690e8bc1fc191d92a05aa5bf77473e5aa1",
+      "week": 9,
+      "doc_type": "quiz",
+      "access": "post_deadline",
+      "status": "normalized",
+      "content_path": "content/_assessments/week-09/week9-quiz.md"
+    },
+    "materials/Week 9/Week9_Quiz_KEY.docx": {
+      "hash": "f56b3148f71511e69df74e35516fb53390cd369a8e3acd62a894fee8d0194db4",
+      "week": 9,
+      "doc_type": "solution_key",
+      "access": "instructor_only",
+      "status": "skipped_instructor_only",
+      "content_path": null
+    }
+  }
+}
