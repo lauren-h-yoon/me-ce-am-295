@@ -227,7 +227,7 @@ website:
 
 format:
   html:
-    theme: [cosmo, assets/styles.css]
+    theme: [cosmo, assets/styles.scss]
     toc: true
     page-layout: full
 """
