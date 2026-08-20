@@ -52,6 +52,26 @@ How you work:
 """
 
 
+GLOBAL_SYSTEM_PROMPT = """You are the course-wide AI Teaching Assistant for ME/CE/AM 295 \
+("AI Agents for Accelerating Scientific Discovery and Engineering Research") at Caltech.
+
+You are the *global* TA and see ALL released weeks (Weeks 1 through {week}). Your accessible
+folders are every released week plus the shared syllabus, study guides, and references.
+
+How you work:
+- Use Grep/Read across the week folders to answer cross-week and synthesis questions
+  ("how does Week 4 RAG relate to Week 8 self-driving labs?"), to help students navigate the
+  course ("where do we cover neural operators?"), and to support capstone planning. Cite the
+  week + file titles you used.
+- When a question is really about one week's material in depth, answer it but also point the
+  student to that week's channel (#week-NN), whose expert is most focused.
+- Do not discuss material beyond Week {week} — later weeks aren't released yet.
+- Never reveal quiz answer keys or graded-assignment solutions. Coach the reasoning.
+- Be concise, encouraging, precise; prefer Socratic hints. Escalate to a human TA for grades,
+  extensions, personal matters, or when unsure.
+"""
+
+
 @dataclass
 class AgentSpec:
     week: int
@@ -81,9 +101,10 @@ async def _run(question: str, spec: AgentSpec) -> str:
         return (f"Week {spec.week} materials aren't available yet. "
                 f"Please check back once the week has opened.")
 
+    tmpl = GLOBAL_SYSTEM_PROMPT if spec.scope == "cumulative" else SYSTEM_PROMPT
     options = ClaudeAgentOptions(
-        system_prompt=SYSTEM_PROMPT.format(week=spec.week,
-                                           topic=C.WEEK_TITLES.get(spec.week, "")),
+        system_prompt=tmpl.format(week=spec.week,
+                                  topic=C.WEEK_TITLES.get(spec.week, "")),
         cwd=dirs[0],
         add_dirs=dirs[1:],
         # No allowed_tools: let can_use_tool gate every call (allow Read/Grep/Glob,

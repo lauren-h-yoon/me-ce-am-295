@@ -23,6 +23,8 @@ from pipeline import config as C
 CORE_CHANNELS = [
     ("announcements", "Official course announcements. Read-only for students."),
     ("general", "General course chat and logistics."),
+    ("ask-anything", "Ask the course-wide AI TA anything — it sees all released weeks, "
+                     "synthesizes across them, and points you to the right week. @weekly answers here."),
 ]
 
 
@@ -87,8 +89,8 @@ def provision(dry_run: bool = False):
         # Link the channel to its Google Drive folder (idempotent bookmark).
         m = re.match(r"week-(\d+)$", name)
         drive_url = (C.drive_week_url(int(m.group(1))) if m
-                     else C.drive_folder_url(C.DRIVE_ROOT_FOLDER_ID) if name == "general"
-                     else None)
+                     else C.drive_folder_url(C.DRIVE_ROOT_FOLDER_ID)
+                     if name in ("general", "ask-anything") else None)
         if drive_url:
             try:
                 existing = {b.get("link") for b in

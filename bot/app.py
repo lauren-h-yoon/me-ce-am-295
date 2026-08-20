@@ -77,7 +77,11 @@ def effective_week(chan_week: int | None) -> tuple[int, str, str | None]:
 
 
 def generate_answer(question: str, chan_week: int | None) -> str:
-    """Run the week-scoped Claude Agent SDK agent (RAG-as-tool)."""
+    """Route to the weekly expert (#week-NN) or the global course-wide agent
+    (#ask-anything / #general / DMs / assistant pane opened outside a week channel)."""
+    if chan_week is None:
+        return run_agent(question, week=C.current_week(), scope="cumulative",
+                         agent_name="all_student_agents")
     week, agent, defer = effective_week(chan_week)
     if defer:
         return defer
@@ -96,6 +100,31 @@ def suggested_prompts(week: int) -> list[dict]:
     ]
 
 
+def global_prompts() -> list[dict]:
+    return [
+        {"title": "Where do we cover…?",
+         "message": "Which week covers retrieval-augmented generation, and what should I read?"},
+        {"title": "Connect two topics",
+         "message": "How do Week 4 (RAG) and Week 8 (self-driving labs) relate?"},
+        {"title": "Capstone help",
+         "message": "Help me scope a capstone project that spans a few weeks of the course."},
+    ]
+
+
+def context_brief(client, channel_id):
+    """Return (title, greeting, prompts) for an assistant thread's channel context."""
+    cw = week_from_channel_id(client, channel_id)
+    if cw:
+        return (f"Week {cw} TA",
+                f"Hi! I'm the *Week {cw} — {C.WEEK_TITLES.get(cw, '')}* expert. "
+                f"Ask me anything about this week's materials.",
+                suggested_prompts(cw))
+    return ("Course-wide TA",
+            "Hi! I'm the course-wide AI TA — I can see all released weeks, connect topics "
+            "across them, and point you to the right week. Ask me anything.",
+            global_prompts())
+
+
 # ------------------------------------------------------------------
 # App
 # ------------------------------------------------------------------
@@ -108,18 +137,17 @@ def build_app():
     # ---- Agents & AI Apps: the assistant pane ----
     @assistant.thread_started
     def on_thread_started(say, set_suggested_prompts, set_title, get_thread_context, client):
-        ctx = get_thread_context()
-        week = week_from_channel_id(client, getattr(ctx, "channel_id", None)) or C.current_week()
-        say(f"Hi! I'm your ME/CE/AM 295 AI TA, focused on *Week {week} — "
-            f"{C.WEEK_TITLES.get(week, '')}*. Ask me anything about the course materials.")
-        set_title(f"Week {week} — AI TA")
-        set_suggested_prompts(prompts=suggested_prompts(week))
+        cid = getattr(get_thread_context(), "channel_id", None)
+        title, greeting, prompts = context_brief(client, cid)
+        say(greeting)
+        set_title(title)
+        set_suggested_prompts(prompts=prompts)
 
     @assistant.thread_context_changed
     def on_context_changed(set_suggested_prompts, get_thread_context, client):
-        ctx = get_thread_context()
-        week = week_from_channel_id(client, getattr(ctx, "channel_id", None)) or C.current_week()
-        set_suggested_prompts(prompts=suggested_prompts(week))
+        cid = getattr(get_thread_context(), "channel_id", None)
+        _, _, prompts = context_brief(client, cid)
+        set_suggested_prompts(prompts=prompts)
 
     @assistant.user_message
     def on_user_message(payload, set_status, say, get_thread_context, client):
