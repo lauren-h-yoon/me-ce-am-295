@@ -168,22 +168,43 @@ def build(publish_all: bool):
         f"students in the course [Google Drive → References folder]({ref_url}). "
         "Third-party papers are not reposted here for copyright reasons."))
 
-    # ---- home ----
+    # ---- home (custom hero; grid emitted on ONE line so the <a> cards are real
+    #      grid children — a multi-line block gets wrapped in <p> by pandoc) ----
     cards = []
     for w, s in C.WEEK_STARTS:
         locked = "" if w in open_weeks else " locked"
-        badge = '<span class="badge-open">● open</span>' if w in open_weeks \
-            else f'<span class="badge-locked">🔒 opens {s:%b %-d}</span>'
+        badge = ('<span class="badge-open">● open</span>' if w in open_weeks
+                 else f'<span class="badge-locked">🔒 {s:%b %-d}</span>')
         cards.append(
             f'<a class="week-card{locked}" href="weeks/week-{w:02d}.html">'
             f'<span class="wk-num">Week {w}</span>'
-            f'<span class="wk-title">{WEEK_TITLES.get(w,"")}</span>{badge}</a>')
-    home = ("ME/CE/AM 295 — **AI Agents for Accelerating Scientific Discovery and "
-            "Engineering Research** (Caltech, Fall 2026).\n\n"
-            "Browse by week below, check the [schedule](schedule.qmd), or ask the "
-            "[AI TA](ai-ta.qmd) on Slack.\n\n"
-            '<div class="week-grid">\n' + "\n".join(cards) + "\n</div>")
-    (SITE / "index.qmd").write_text(qmd("ME/CE/AM 295", home))
+            f'<span class="wk-title">{WEEK_TITLES.get(w, "")}</span>'
+            f'<span class="wk-badge">{badge}</span></a>')
+    grid = '<div class="week-grid">' + "".join(cards) + '</div>'
+    hero = (
+        '<div class="hero"><div class="hero-inner">'
+        '<div class="eyebrow">Caltech · Engineering &amp; Applied Science · Fall 2026</div>'
+        '<h1 class="hero-title">ME/CE/AM 295</h1>'
+        '<p class="hero-sub">AI Agents for Accelerating Scientific Discovery '
+        '&amp; Engineering Research</p>'
+        '<div class="hero-cta">'
+        '<a class="btn-hero btn-solid" href="schedule.html">View schedule</a>'
+        '<a class="btn-hero btn-ghost" href="ai-ta.html">Ask the AI TA</a>'
+        '</div></div></div>'
+    )
+    index_md = (
+        '---\n'
+        'pagetitle: "ME/CE/AM 295 — AI Agents for Scientific Discovery"\n'
+        'page-layout: full\n'
+        'toc: false\n'
+        '---\n\n'
+        + hero + '\n\n'
+        '<h2 class="section-title">Weekly modules</h2>\n'
+        '<p class="section-note">Ten weeks — open a module for its materials. '
+        'Each week has its own AI TA in the matching Slack channel.</p>\n\n'
+        + grid + '\n'
+    )
+    (SITE / "index.qmd").write_text(index_md)
 
     # ---- AI TA page ----
     (SITE / "ai-ta.qmd").write_text(qmd("AI Teaching Assistant",
@@ -228,6 +249,7 @@ website:
 format:
   html:
     theme: [cosmo, assets/styles.scss]
+    favicon: assets/favicon.svg
     toc: true
     page-layout: full
 """
