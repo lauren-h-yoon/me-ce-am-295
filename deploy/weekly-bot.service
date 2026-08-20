@@ -1,0 +1,32 @@
+# systemd unit for running the Weekly AI TA on a plain (SSH'd) VM — no Docker.
+# Install:
+#   sudo cp deploy/weekly-bot.service /etc/systemd/system/weekly-bot.service
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now weekly-bot
+#   journalctl -u weekly-bot -f          # live logs
+#
+# Assumes the repo at /opt/me-ce-am-295 with a venv (.venv), a filled-in .env,
+# populated content/, and the `claude` CLI on PATH (npm i -g @anthropic-ai/claude-code).
+[Unit]
+Description=ME/CE/AM 295 Weekly AI TA (Slack Socket Mode bot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=weekly
+WorkingDirectory=/opt/me-ce-am-295
+EnvironmentFile=/opt/me-ce-am-295/.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/opt/me-ce-am-295
+# Ensure the Claude Code CLI (installed via npm -g) is discoverable:
+Environment=PATH=/usr/local/bin:/usr/bin:/bin:/opt/me-ce-am-295/.venv/bin
+ExecStart=/opt/me-ce-am-295/.venv/bin/python -m bot.app
+Restart=always
+RestartSec=5
+# Give in-flight answers a moment; then stop the socket + claude subprocesses.
+TimeoutStopSec=20
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
