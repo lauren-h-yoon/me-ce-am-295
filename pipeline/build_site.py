@@ -124,7 +124,8 @@ def build(publish_all: bool):
             (WEEKS_OUT / f"week-{w:02d}.qmd").write_text(qmd(f"Week {w} — {wt}", body))
             continue
         items = by_week.get(w, [])
-        lines = [f"*Opened {when}. Ask **@ai-ta** in `#week-{w:02d}` on Slack.*", ""]
+        lines = [f"*Opened {when}. Ask **@weekly** in `#week-{w:02d}` on Slack — "
+                 f"the Week {w} expert.*", ""]
         if not items:
             lines.append("_Materials will be posted here._")
         else:
@@ -208,11 +209,19 @@ def build(publish_all: bool):
 
     # ---- AI TA page ----
     (SITE / "ai-ta.qmd").write_text(qmd("AI Teaching Assistant",
-        "Every week has a Slack channel `#week-NN` with an AI TA scoped to that "
-        "week's materials.\n\n"
-        "**How to use it**\n\n"
-        "- Post in your week's channel or `@ai-ta` it; DMs work too.\n"
-        "- It answers from the course materials for that week (and earlier).\n"
+        "The course has an AI Teaching Assistant, **@weekly**, in Slack — a fleet of "
+        "per-week experts plus a course-wide agent.\n\n"
+        "### Weekly experts\n"
+        "Each `#week-NN` channel has **@weekly** scoped to *that* week's materials. "
+        "Mention **@weekly** in the channel, open the assistant panel from it, or DM it. "
+        "It answers only from that week (and shared course docs), and points you elsewhere "
+        "for other weeks.\n\n"
+        "### Course-wide agent\n"
+        "In **#ask-anything** (and DMs), **@weekly** sees all released weeks — it connects "
+        "topics across weeks, helps you find where something is covered, and supports "
+        "capstone planning.\n\n"
+        "### Good to know\n"
+        "- Grounded in the course materials; it cites what it used.\n"
         "- It won't hand out quiz answer keys — it coaches the reasoning.\n"
         "- React ⭐ if an answer helped, 🚩 if it was wrong (a human TA reviews flags).\n\n"
         f"Join the workspace: [me-ce-am-295.slack.com](https://me-ce-am-295.slack.com)."))
